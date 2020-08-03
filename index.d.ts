@@ -1,5 +1,5 @@
 declare module "pg-range" {
-  import { default as StRange } from "strange";
+  import * as StRange from "strange";
 
   // Must use any here as we cannot use a namespace as a type
   export function install(pg: any): void;
